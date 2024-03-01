@@ -3,8 +3,9 @@
 
 ### INDEX
 
-- [Inferential Statistics](inferential_statistics)
+- **[Inferential Statistics](inferential_statistics)**
+    - **DBSCAN**
 - [Machine Learning Algorithms](MLA)
 - [Feature Engineering](feature_engineering)
-- [Soft Computing Techniques](soft computing)
+- [Soft Computing Techniques](soft_computing)
 - [LAB](lab)

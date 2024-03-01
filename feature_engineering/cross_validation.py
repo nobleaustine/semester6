@@ -1,4 +1,10 @@
-from sklearn.model_selection import train_test_split, KFold, LeaveOneOut, LeavePOut, cross_val_score
+from sklearn.model_selection import (
+    train_test_split,
+    KFold,
+    LeaveOneOut,
+    LeavePOut,
+    cross_val_score,
+)
 from sklearn.datasets import load_iris
 from sklearn.svm import SVC
 import numpy as np
@@ -13,11 +19,13 @@ svm_model = SVC()
 k_fold_scores = cross_val_score(svm_model, X, y, cv=k_fold)
 # average_accuracy= np.mean(np.array(k_fold_scores.mean()))
 print("K-Fold Cross Validation Scores:")
-print("Mean Accuracy:",k_fold_scores.mean())
+print("Mean Accuracy:", k_fold_scores.mean())
 print(" ")
 
 # Hold-out Validation
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 svm_model.fit(X_train, y_train)
 holdout_accuracy = svm_model.score(X_test, y_test)
 print("Hold-out Validation Accuracy:", holdout_accuracy)

@@ -1,7 +1,9 @@
 import numpy as np
 from scipy.stats import iqr
 
-data = np.array([23, 24, 26, 15, 13, 31, 42, 10, 11, 14,16,25,48,64,93,96,72,62,52,32,28])
+data = np.array(
+    [23, 24, 26, 15, 13, 31, 42, 10, 11, 14, 16, 25, 48, 64, 93, 96, 72, 62, 52, 32, 28]
+)
 data = np.sort(data)
 print(data)
 m = np.median(data)
@@ -19,9 +21,30 @@ IQR = Q3 - Q1
 print("Interquartile Range (IQR):", IQR)
 
 
-
 # Sample data
-data = [23, 24, 26, 15, 13, 31, 42, 10, 11, 14,16,25,48,64,93,96,72,62,52,32,28]
+data = [
+    23,
+    24,
+    26,
+    15,
+    13,
+    31,
+    42,
+    10,
+    11,
+    14,
+    16,
+    25,
+    48,
+    64,
+    93,
+    96,
+    72,
+    62,
+    52,
+    32,
+    28,
+]
 
 # Calculate the Interquartile Range (IQR)
 IQR = iqr(data)

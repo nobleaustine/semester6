@@ -4,7 +4,7 @@
 ### INDEX
 
 - **[Inferential Statistics](inferential_statistics)**
-    - **DBSCAN**
+    - **[T-test](inferential_statistics\t_test.py)**
 - [Machine Learning Algorithms](MLA)
 - [Feature Engineering](feature_engineering)
 - [Soft Computing Techniques](soft_computing)
